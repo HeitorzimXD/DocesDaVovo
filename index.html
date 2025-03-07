@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <link rel="shortcut icon" href="2.png" type="image/x-icon">
+    <title>Doces da Vovó</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8e8e8;
+            color: #5a3e36;
+        }
+        
+        .logo {
+            width: 250px;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        .product-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: auto;
+        }
+        .product {
+            display: flex;
+            flex-direction: row;
+            width:100%;
+            background-color: #fff;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            box-sizing: border-box;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #d17878;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #b96565;
+            transform: scale(1.05);
+        }
+
+        .imageProduct {
+            margin-top: 1%;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+
+        .infoProduct {
+            margin-left: 4%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        
+        }
+
+        .titulo {
+            margin: 5px;
+            padding: 0;
+        }
+
+        .txt {
+            margin: 5px;
+            padding: 0;
+        }
+        
+
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #5a3e3e;
+            margin-left: auto; /* Empurra o preço para a direita */
+            display: flex;
+            align-items: center; /* Centraliza verticalmente */
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <img src="1.png" alt="Doces da Vovó" class="logo">
+    </header>
+    <div class="content">
+        <h1>Nossos Produtos</h1>
+        <div class="product-list">
+            <div class="product">
+                <img class="imageProduct" src="2.png" alt="">
+                <div class="infoProduct">                                      
+                    <h3 class="titulo">Bolo de Chocolate</h3>
+                    <p class="txt">Ingredientes: Farinha, açúcar, ovos, chocolate, leite.</p>
+                </div>
+                <span class="price">R$35,00</span>
+            </div>
+            <div class="product">
+                <img class="imageProduct" src="2.png" alt="">
+                <div class="infoProduct">
+                    <h3 class="titulo">Torta de Morango</h3>
+                    <p class="txt">Ingredientes: Morango, creme, açúcar, massa folhada.</p>
+                </div>
+                <span class="price">R$35,00</span>
+            </div>
+            <div class="product">
+                <img class="imageProduct" src="2.png" alt="">
+                <div class="infoProduct">
+                    <h3 class="titulo">Brigadeiro</h3>
+                    <p class="txt">Ingredientes: Leite condensado, chocolate, manteiga.</p>
+                </div>
+                <span class="price">R$35,00</span>
+            </div>
+            <div class="product">
+                <img class="imageProduct" src="2.png" alt="">
+                <div class="infoProduct">
+                    <h3 class="titulo">Beijinho</h3>
+                    <p class="txt">Ingredientes: Leite condensado, coco ralado, manteiga.</p>
+                </div>
+                <span class="price">R$35,00</span>
+            </div>
+            <div class="product">
+                <img class="imageProduct" src="2.png" alt="">
+                <div class="infoProduct">
+                    <h3 class="titulo">Quindim</h3>
+                    <p class="txt">Ingredientes: Gemas, açúcar, coco ralado.</p>
+                </div>
+                <span class="price">R$35,00</span>
+            </div>
+            <div class="product">
+                <img class="imageProduct" src="2.png" alt="">
+                <div class="infoProduct">
+                    <h3 class="titulo">Pudim de Leite</h3>
+                    <p class="txt">Ingredientes: Leite condensado, ovos, açúcar, leite.</p>
+                </div>
+                <span class="price">R$35,00</span>
+            </div>
+            <div class="product">
+                <img class="imageProduct" src="2.png" alt="">
+                <div class="infoProduct">
+                    <h3 class="titulo">Rocambole</h3>
+                    <p class="txt">Ingredientes: Farinha, açúcar, ovos, recheio de chocolate ou doce de leite.</p>
+                </div>
+                <span class="price">R$35,00</span>
+            </div>
+            <div class="product">
+                <img class="imageProduct" src="2.png" alt="">
+                <div class="infoProduct">
+                    <h3 class="titulo">Palha Italiana</h3>
+                    <p class="txt">Ingredientes: Brigadeiro, biscoito triturado, açúcar de confeiteiro.</p>
+                </div>
+                <span class="price">R$35,00</span>
+            </div>
+        </div>
+        <a href="https://wa.me/996698226" class="button">Fazer Pedido</a>
+    </div>
+    <footer>
+        <a href="#" class="button">Enviar Sugestão</a>
+    </footer>
+</body>
+</html>
