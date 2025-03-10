@@ -127,12 +127,14 @@ body {
     margin: auto;
     text-align: center; /* Alinha o texto à esquerda */
     width: 60%; /* Para não encostar nas bordas */
+    margin-left: 4%;
 }
+
  /*Estilzação da Imagem de Sugestões*/
 .imgsug {
     width: 230px;
     height: 230px;
-    margin-left: 5%;
+    margin-right: 3%;
 }
 
 .botaos {
@@ -153,4 +155,33 @@ body {
 .botaos:hover {
     background-color: #b96565;
     transform: scale(1.05);
+}
+
+/*Resposividade para telas menores que 768px*/
+
+@media (max-width: 768px) {
+    .sugestao {
+        width: 80%;
+    }
+
+    .textoEimagem {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .botaos {
+        width: 80%;
+    }
+
+    .sTxt {
+        width: 80%;
+        margin-left: 12%;
+        margin-bottom: 6%;
+    }
+
+    .imgsug {
+        margin-left: 20%;
+    }
 }
