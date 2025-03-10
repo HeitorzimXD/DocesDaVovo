@@ -1,4 +1,4 @@
-
+*{margin: 0}
 
 body {
     font-family: Arial, sans-serif;
@@ -49,6 +49,7 @@ body {
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    margin-top: 2%;
 }
 
 .botao:hover {
@@ -80,7 +81,6 @@ body {
     margin: 5px;
     padding: 0;
 }
-
 
 .price {
     font-size: 18px;
@@ -118,6 +118,7 @@ body {
 .textoEimagem {
     display: flex;
     flex-direction: row;
+    margin-top: 4%;
 }
 
 /*Estilzação do Texto de Sugestões*/
@@ -157,9 +158,17 @@ body {
     transform: scale(1.05);
 }
 
-/*Resposividade para telas menores que 768px*/
 
-@media (max-width: 768px) {
+/*Footer*/
+footer {
+    margin-top: 3%;
+    color: white;
+    background-color: #5a3e3e;
+    padding: 20px;
+}
+
+/*Resposividade para telas menores que 767px*/
+@media (max-width: 767px) {
     .sugestao {
         width: 80%;
     }
@@ -182,6 +191,13 @@ body {
     }
 
     .imgsug {
-        margin-left: 20%;
+        margin: auto;
+    }
+}
+
+/*Resposividade para telas menores que 1024px*/
+@media (max-width: 1024px) {
+    .sugestao {
+        width: 80%;
     }
 }
