@@ -208,6 +208,10 @@ header {
     margin-right: 3%;
 }
 
+.spanErro {
+    display: block;
+}
+
 button {
     font-size: 1.0rem;
     width: 190px;

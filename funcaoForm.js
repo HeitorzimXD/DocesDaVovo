@@ -28,7 +28,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Valide se todos os campos estão preenchidos
         if (!nome || !email || !mensagem) {
-            alert("Por favor, preencha todos os campos.");
+            document.getElementById("error").innerText = 
+            nome === "" || email === "" || mensagem === "" ? "Por favor, preencha todos os campos." : "";
             return; // Impede a execução do código se algum campo estiver vazio
         }
 
