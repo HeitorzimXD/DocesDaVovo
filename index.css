@@ -9,17 +9,31 @@ body {
     color: #5a3e36;
 }
 
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: #5a3e36;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
 .logo {
-    width: 250px;
+    margin-right: 2%;
+    width: 100px;
 }
 
 .frase {
     font-size: 1.5rem;
-    margin-bottom: 3%;
 }
 
 .content {
-    margin-top: 20px;
+    margin-top: 3%;
+}
+
+.txtP {
+    margin-bottom: 2%;
 }
 
 .product-list {

@@ -10,13 +10,14 @@ document.addEventListener("DOMContentLoaded", function () {
     toggleButton.addEventListener("click", function () {
         if (sugestaoForm.style.display === "none" || sugestaoForm.style.display === "") {
             sugestaoForm.style.display = "block";
+            
             toggleButton.textContent = "Cancelar Sugestão";  // Altera o texto para "Cancelar Sugestão"
         } else {
             sugestaoForm.style.display = "none";
             toggleButton.textContent = "Fazer Sugestão";  // Altera o texto para "Fazer Sugestão"
         }
     });
-
+    
     enviarBotao.addEventListener("click", function (event) {
         event.preventDefault(); // Previne o comportamento padrão do formulário
         

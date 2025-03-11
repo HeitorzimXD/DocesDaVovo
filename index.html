@@ -14,11 +14,13 @@
 
 <body>
     <header>
-        <img src="1.png" alt="Doces da Vovó" class="logo">
+        <!--Logo--> 
+          <img src="1.png" alt="Doces da Vovó" class="logo">
+          <p class="frase">Tradição que aquece o Coração!</p>
     </header>
+    <!--Espaço para os Produtos--> 
     <div class="content">
-        <p class="frase">Tradição que aquece o Coração!</p>
-        <h1>Nossos Produtos</h1>
+        <h1 class="txtP">Nossos Produtos</h1>
         <div class="product-list">
             <div class="product">
                 <img class="imageProduct" src="2.png" alt="">
@@ -93,10 +95,9 @@
                 <span class="price">R$35,00</span>
             </div>
         </div>
-
-        <a href="https://wa.me/5534996698226" class="bn632-hover bn22"> <img class="imgzap" src="zap.png" alt="zapzap">Fazer
-            Pedido</a>
-
+        <!--Botão do Pedido--> 
+        <a href="https://wa.me/5534996698226" class="bn632-hover bn22"> <img class="imgzap" src="zap.png" alt="zapzap">Fazer Pedido</a>
+        <!--Quadro de Sugestões--> 
         <div class="sugestao">
             <h3 class="sTitulo">Possui alguma dúvida ou sugestão?</h3>
             <div class="textoEimagem">
@@ -104,23 +105,37 @@
                     importante para o crescimento da nossa confeitaria!</p>
                 <img class="imgsug" src="2.png" alt="vovo">
             </div>
+            <!--Botão para abrir o Formulário de Sugestões-->
             <button id="toggleForm">Fazer Sugestão</button>
             <div id="sugestaoForm" style="display: none;">
-                <input type="text" id="nome" placeholder="Nome" style="width: 90%;
+                <input type="text" 
+                    id="nome" 
+                    placeholder="Nome" 
+                    style="width: 90%;
                     padding: 10px;
                     border-radius: 15px;
-                    margin-top: 10px" ; required />
-                <input type="email" id="email" placeholder="E-mail" style="width: 90%;
+                    margin-top: 10px" ; 
+                    required />
+                <input type="email"
+                    id="email" 
+                    placeholder="E-mail" 
+                    style="width: 90%;
                     padding: 10px;
                     border-radius: 15px;
-                    margin-top: 10px" ; required />
-                <textarea id="mensagem" placeholder="Digite sua sugestão aqui..." rows="4" style="width: 90%; 
+                    margin-top: 10px" ; 
+                    required />
+                <textarea id="mensagem" 
+                    placeholder="Digite sua sugestão aqui..." 
+                    rows="4" 
+                    style="width: 90%; 
                     padding: 10px; 
                     border-radius: 15px; 
                     margin-top: 10px;
                     font-family: Arial, sans-serif;
-                    resize: none" ; required; spellcheck="true"></textarea>
-
+                    resize: none" ; 
+                    required; 
+                    spellcheck="true"></textarea>
+                <!--Botão para Enviar a Sugestão--> 
                 <button id="enviarSugestao">Enviar Sugestão</button>
             </div>
         </div>
