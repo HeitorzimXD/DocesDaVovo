@@ -248,6 +248,7 @@ footer {
 
     .logo {
         margin-left: 0;
+        margin-right: 0;
     }
 
     .frase {
@@ -256,10 +257,33 @@ footer {
 
     .botao {
         width: 3%;
+        margin-right: 0;
     }
 
     .txtBotao{
         display: none;
+    }
+
+    .background-section {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .bolinho{
+        margin-top: 60px;
+    }
+
+    .sloganBotao {
+        margin-bottom: 30px;
+    }
+
+    .slogan {
+        font-size: 1.2rem;
+        width: 180px;
+    }
+
+    .imgSlogan {
+        width: 200px;
     }
 
     .sugestao {
@@ -296,10 +320,18 @@ footer {
 
     .logo {
         margin-left: 0;
+        margin-right: 0;
+    }
+
+    .botao{
+        margin-right: 0;
     }
 
     .frase {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
+    }
+    .slogan {
+       width: 410px;
     }
 
     .sugestao {
