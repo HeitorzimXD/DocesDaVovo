@@ -8,17 +8,18 @@
     <link rel="stylesheet" href="index.css">
     <script src="funcaoForm.js"></script>
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 
     <title>Doces da Vovó</title>
 </head>
 
 <body>
     <header>
-        <!--Logo--> 
-          <img src="1.png" alt="Doces da Vovó" class="logo">
-          <p class="frase">Tradição que aquece o Coração!</p>
+        <!--Logo-->
+        <img src="1.png" alt="Doces da Vovó" class="logo">
+        <p class="frase">Tradição que aquece o Coração!</p>
     </header>
-    <!--Espaço para os Produtos--> 
+    <!--Espaço para os Produtos-->
     <div class="content">
         <h1 class="txtP">Nossos Produtos</h1>
         <div class="product-list">
@@ -90,14 +91,15 @@
                 <img class="imageProduct" src="2.png" alt="">
                 <div class="infoProduct">
                     <h3 class="titulo">Pão de Queijo</h3>
-                    <p class="txt">Ingredientes: Leite, Polvinho, Ovo, Queijo Ralado, Óleo</p>
+                    <p class="txt">Ingredientes: Leite, polvinho, ovo, queijo ralado, óleo</p>
                 </div>
                 <span class="price">R$35,00</span>
             </div>
         </div>
-        <!--Botão do Pedido--> 
-        <a href="https://wa.me/5534996698226" class="bn632-hover bn22"> <img class="imgzap" src="zap.png" alt="zapzap">Fazer Pedido</a>
-        <!--Quadro de Sugestões--> 
+        <!--Botão do Pedido-->
+        <a href="https://wa.me/5534996698226" class="bn632-hover bn22"> <img class="imgzap" src="zap.png"
+                alt="zapzap">Fazer Pedido</a>
+        <!--Quadro de Sugestões-->
         <div class="sugestao">
             <h3 class="sTitulo">Possui alguma dúvida ou sugestão?</h3>
             <div class="textoEimagem">
@@ -108,36 +110,23 @@
             <!--Botão para abrir o Formulário de Sugestões-->
             <button id="toggleForm">Fazer Sugestão</button>
             <div id="sugestaoForm" style="display: none;">
-                <input type="text" 
-                    id="nome" 
-                    placeholder="Nome" 
-                    style="width: 90%;
+                <input type="text" id="nome" placeholder="Nome" style="width: 90%;
                     padding: 10px;
                     border-radius: 15px;
-                    margin-top: 10px" ; 
-                    required />
-                <input type="email"
-                    id="email" 
-                    placeholder="E-mail" 
-                    style="width: 90%;
+                    margin-top: 10px" ; required />
+                <input type="email" id="email" placeholder="E-mail" style="width: 90%;
                     padding: 10px;
                     border-radius: 15px;
-                    margin-top: 10px" ; 
-                    required />
-                <textarea id="mensagem" 
-                    placeholder="Digite sua sugestão aqui..." 
-                    rows="4" 
-                    style="width: 90%; 
+                    margin-top: 10px" ; required />
+                <textarea id="mensagem" placeholder="Digite sua sugestão aqui..." rows="4" style="width: 90%; 
                     padding: 10px; 
                     border-radius: 15px; 
                     margin-top: 10px;
                     font-family: Arial, sans-serif;
-                    resize: none" ; 
-                    required; 
-                    spellcheck="true"></textarea>
-                
+                    resize: none" ; required; spellcheck="true"></textarea>
+
                 <span class="spanErro" id="error"></span>
-                <!--Botão para Enviar a Sugestão--> 
+                <!--Botão para Enviar a Sugestão-->
                 <button id="enviarSugestao">Enviar Sugestão</button>
             </div>
         </div>
@@ -146,4 +135,5 @@
         <p>© 2025 - Doces da Vovó - Todos os Direitos Reservados</p>
     </footer>
 </body>
+
 </html>
