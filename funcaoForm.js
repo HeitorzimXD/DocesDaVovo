@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Alterna a visibilidade do formulário e o texto do botão
     toggleButton.addEventListener("click", function () {
+        document.getElementById("error").innerText = "";
         if (sugestaoForm.style.display === "none" || sugestaoForm.style.display === "") {
             sugestaoForm.style.display = "block";
             

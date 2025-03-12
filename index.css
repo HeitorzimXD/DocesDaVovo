@@ -44,7 +44,7 @@ a{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-top: 10px;
+    padding-top: 25px;
     justify-content: space-around;
     border-bottom-left-radius: 1000px 450px;
     border-bottom-right-radius: 1000px 450px;
@@ -52,7 +52,7 @@ a{
 
 .slogan {
     color: white; 
-    font-size: 2.3rem;
+    font-size: 2.8rem;
 }
 
 .imgSlogan {
