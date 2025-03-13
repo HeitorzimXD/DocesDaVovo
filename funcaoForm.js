@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     
     // Lista de imagens que serão exibidas
-    const imagens = ["bolim_capa.png", "bolo_chocolate.png", "brigadeiro.png"];
+    const imagens = ["bolim_capa.png", "bolo_chocolate.png", "2.png"];
     let index = 0;
     const imgElement = document.getElementById("capa");
 
@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     setInterval(trocarImagem, 5000);
-
 
     // Inicializa o botão com o texto "Fazer Sugestão"
     toggleButton.textContent = "Fazer Sugestão";
