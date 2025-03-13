@@ -3,9 +3,33 @@ document.addEventListener("DOMContentLoaded", function () {
     const sugestaoForm = document.getElementById("sugestaoForm");
     const enviarBotao = document.getElementById("enviarBotao");
 
-    document.getElementById("msgWhats").addEventListener("click", function() {
+    document.getElementById("msgWhats").addEventListener("click", function () {
         const mensagem = encodeURIComponent("Olá, gostaria de fazer um pedido!");
         window.open(`https://wa.me/5534996698226?text=${mensagem}`, "_blank");
+    });
+
+    enviarBotao.addEventListener("click", function (event) {
+        event.preventDefault(); // Previne o comportamento padrão do formulário
+
+        // Pegue os dados do formulário
+        const nome = document.getElementById("nome").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const mensagem = document.getElementById("mensagem").value.trim();
+
+        // Valide se todos os campos estão preenchidos
+        if (!nome || !email || !mensagem) {
+            document.getElementById("error").innerText =
+                nome === "" || email === "" || mensagem === "" ? "Por favor, preencha todos os campos." : "";
+            return; // Impede a execução do código se algum campo estiver vazio
+        } else {
+            document.getElementById("sugestaoForm").submit();
+            document.getElementById("error").innerText = "Mensagem enviada com sucesso!"
+        }
+
+        // Limpar campos após o envio
+        document.getElementById("nome").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("mensagem").value = "";
     });
     
     // Lista de imagens que serão exibidas
@@ -33,37 +57,12 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("error").innerText = "";
         if (sugestaoForm.style.display === "none" || sugestaoForm.style.display === "") {
             sugestaoForm.style.display = "block";
-            
+
             toggleButton.textContent = "Cancelar Sugestão";  // Altera o texto para "Cancelar Sugestão"
         } else {
             sugestaoForm.style.display = "none";
             toggleButton.textContent = "Fazer Sugestão";  // Altera o texto para "Fazer Sugestão"
         }
-    });
-
-
-    enviarBotao.addEventListener("click", function (event) {
-        event.preventDefault(); // Previne o comportamento padrão do formulário
-
-        // Pegue os dados do formulário
-        const nome = document.getElementById("nome").value.trim();
-        const email = document.getElementById("email").value.trim();
-        const mensagem = document.getElementById("mensagem").value.trim();
-
-        // Valide se todos os campos estão preenchidos
-        if (!nome || !email || !mensagem) {
-            document.getElementById("error").innerText = 
-            nome === "" || email === "" || mensagem === "" ? "Por favor, preencha todos os campos." : "";
-            return; // Impede a execução do código se algum campo estiver vazio
-        }  else {
-            document.getElementById("sugestaoForm").submit();
-            document.getElementById("error").innerText = "Mensagem enviada com sucesso!"
-        } 
-    
-        // Limpar campos após o envio
-        document.getElementById("nome").value = "";
-        document.getElementById("email").value = "";
-        document.getElementById("mensagem").value = "";
     });
 });
 
