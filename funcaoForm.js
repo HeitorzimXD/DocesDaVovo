@@ -3,6 +3,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const sugestaoForm = document.getElementById("sugestaoForm");
     const enviarBotao = document.getElementById("enviarBotao");
 
+    document.getElementById("msgWhats").addEventListener("click", function() {
+        const mensagem = encodeURIComponent("Olá, gostaria de fazer um pedido!")
+    });
+    
     // Inicializa o botão com o texto "Fazer Sugestão"
     toggleButton.textContent = "Fazer Sugestão";
 
