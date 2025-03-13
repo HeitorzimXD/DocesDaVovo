@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const enviarBotao = document.getElementById("enviarBotao");
 
     document.getElementById("msgWhats").addEventListener("click", function() {
-        const mensagem = encodeURIComponent("Olá, gostaria de fazer um pedido!")
+        const mensagem = encodeURIComponent("Olá, gostaria de fazer um pedido!");
         window.open('https://wa.me/5534996698226?text=${mensagem}', "_blank");
     });
     
