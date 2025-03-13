@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.getElementById("msgWhats").addEventListener("click", function() {
         const mensagem = encodeURIComponent("Olá, gostaria de fazer um pedido!")
+        window.open('https://wa.me/5534996698226?text=${mensagem}', "_blank");
     });
     
     // Inicializa o botão com o texto "Fazer Sugestão"

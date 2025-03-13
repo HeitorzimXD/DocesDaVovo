@@ -17,7 +17,7 @@
         <!--Logo-->
         <a href="index.html"><img src="2.png" alt="Doces da Vovó" class="logo"></a>
         <p class="frase">Doces da Vovó</p>
-        <a href="https://wa.me/5534996698226" id="msgWhats" class="botao"> <img class="imgzap" src="zap.png" alt="zapzap"><p class="txtBotao">Fazer Pedido</p></a>
+        <button  id="msgWhats" class="botao"> <img class="imgzap" src="zap.png" alt="zapzap">Fazer Pedido</button>
     </header>
     <div class="background-section">
         <div class="sloganBotao">
@@ -109,7 +109,7 @@
             </div>
             <!--Botão para abrir o Formulário de Sugestões-->
             <!-- Para deixar o formulário visível, comentar o botão abaixo e ir na linha 231 do CSS e editar o form e comentar o código referente no JS-->
-            <button id="toggleForm">Fazer Sugestão</button>
+            <button id="toggleForm" class="botaoSug">Fazer Sugestão</button>
             <form id="sugestaoForm" action="processa.php" method="post" target="_blank">
                 <input type="text" id="nome" name="nome" placeholder="Nome" style="width: 90%;
                     padding: 10px;
@@ -128,7 +128,7 @@
 
                 <span class="spanErro" id="error"></span>
                 <!--Botão para Enviar a Sugestão-->
-                <button type="button" id="enviarBotao">Enviar Sugestão</button>
+                <button type="button" id="enviarBotao" class="botaoSug">Enviar Sugestão</button>
             </form>
         </div>
     </div>
