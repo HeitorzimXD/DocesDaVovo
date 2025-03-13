@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -98,14 +98,6 @@
                 </div>
                 <span class="price">R$35,00</span>
             </div>
-            <div class="product">
-                <img class="imageProduct" src="pao_de_queijo.png" alt="Paõ de Queijo">
-                <div class="infoProduct">
-                    <h3 class="titulo">Pão de Queijo</h3>
-                    <p class="txt">Ingredientes: Leite, polvinho, ovo, queijo ralado, óleo</p>
-                </div>
-                <span class="price">R$35,00</span>
-            </div>
         </div>
        
         <!--Quadro de Sugestões-->
@@ -117,26 +109,27 @@
                 <img class="imgsug" src="2.png" alt="vovo">
             </div>
             <!--Botão para abrir o Formulário de Sugestões-->
+            <!-- Para deixar o formulário visível, comentar o botão abaixo e ir na linha 231 do CSS e editar o form e comentar o código referente no JS-->
             <button id="toggleForm">Fazer Sugestão</button>
-            <form id="sugestaoForm" action="processa.php" method="post" onsubmit="return validarBotao()">
-                <input type="text" id="nome" placeholder="Nome" style="width: 90%;
+            <form id="sugestaoForm" action="processa.php" method="post" target="_blank">
+                <input type="text" id="nome" name="nome" placeholder="Nome" style="width: 90%;
                     padding: 10px;
                     border-radius: 15px;
-                    margin-top: 10px" ; required />
-                <input type="email" id="email" placeholder="E-mail" style="width: 90%;
+                    margin-top: 10px"; />
+                <input type="email" id="email" name="email" placeholder="E-mail" style="width: 90%;
                     padding: 10px;
                     border-radius: 15px;
-                    margin-top: 10px" ; required />
-                <textarea id="mensagem" placeholder="Digite sua sugestão aqui..." rows="4" style="width: 90%; 
+                    margin-top: 10px"; />
+                <textarea id="mensagem"  name="mensagem" placeholder="Digite sua sugestão aqui..." rows="4" style="width: 90%; 
                     padding: 10px; 
                     border-radius: 15px; 
                     margin-top: 10px;
                     font-family: Arial, sans-serif;
-                    resize: none" ; required; spellcheck="true"></textarea>
+                    resize: none"; spellcheck="true"></textarea>
 
                 <span class="spanErro" id="error"></span>
                 <!--Botão para Enviar a Sugestão-->
-                <button id="enviarSugestao">Enviar Sugestão</button>
+                <button type="button" id="enviarBotao">Enviar Sugestão</button>
             </form>
         </div>
     </div>

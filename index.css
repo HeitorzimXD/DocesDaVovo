@@ -201,10 +201,12 @@ a{
     margin-right: 3%;
 }
 
+/*Mensagem de erro caso os campos das sugestões não estejam preenchidos*/
 .spanErro {
     display: block;
 }
 
+/*Estilização dos botões de sugestão*/
 button {
     font-size: 1.0rem;
     width: 190px;
@@ -227,11 +229,17 @@ button {
     background-color: #b96565;
     transform: scale(1.05);
 }
-
+/*Configurações do Formulário de Sugestões*/
+/*Para retirada do botão de abertura do formulário, editar o código do form para:
+display: flex;
+flex-direction: column;
+align-items: center;
+*/
 form {
     display: none;
 }
 
+/*Estilização do fomrulário de sugestões*/
 #sugestaoForm {
     margin-top: 10px;
     padding: 10px;
