@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
             toggleButton.textContent = "Fazer Sugestão";  // Altera o texto para "Fazer Sugestão"
         }
     });
-    
+    /*
     enviarBotao.addEventListener("click", function (event) {
         event.preventDefault(); // Previne o comportamento padrão do formulário
         
@@ -29,11 +29,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Valide se todos os campos estão preenchidos
         if (!nome || !email || !mensagem) {
-            document.getElementById("error").innerText = 
-            nome === "" || email === "" || mensagem === "" ? "Por favor, preencha todos os campos." : "";
+            //document.getElementById("error").innerText = 
+           // nome === "" || email === "" || mensagem === "" ? "Por favor, preencha todos os campos." : "";
             return; // Impede a execução do código se algum campo estiver vazio
         }
+        
+    });
+    */
 
+    function validarBotao () {
+        let nome = document.getElementById("nome").value;
+        let email = document.getElementById("email").value;
+        let mensagem = document.getElementById("mensagem").value;
+
+        if (nome === "" || email === "" || mensagem === "") {
+            alert("Todos os campos são obrigtórios!");
+            return false;
+        }
+        return true;
+    }
+});
+
+
+
+/*
         // Cria uma mensagem no formato de texto para enviar via WhatsApp
         const mensagemWhatsApp = `Nome: ${nome}\nE-mail: ${email}\nMensagem: ${mensagem}`;
         
@@ -43,11 +62,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Abre o WhatsApp com a mensagem pré-preenchida
         window.open(urlWhatsApp, "_blank");
-
+        
         // Limpar campos após o envio
         document.getElementById("nome").value = "";
         document.getElementById("email").value = "";
         document.getElementById("mensagem").value = "";
-
-    });
-});
+        */

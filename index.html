@@ -32,7 +32,7 @@
     <!--Espaço para os Produtos-->
     <div class="content"  id="produtosNav">
             <h1 class="txtP">Nossos Produtos</h1>
-        </div>
+    </div>
         <div class="product-list">
             <div class="product">
                 <img class="imageProduct" src="bolo_chocolate.png" alt="">
@@ -118,7 +118,7 @@
             </div>
             <!--Botão para abrir o Formulário de Sugestões-->
             <button id="toggleForm">Fazer Sugestão</button>
-            <div id="sugestaoForm" style="display: none;">
+            <form id="sugestaoForm" action="processa.php" method="post" onsubmit="return validarBotao()">
                 <input type="text" id="nome" placeholder="Nome" style="width: 90%;
                     padding: 10px;
                     border-radius: 15px;
@@ -137,7 +137,7 @@
                 <span class="spanErro" id="error"></span>
                 <!--Botão para Enviar a Sugestão-->
                 <button id="enviarSugestao">Enviar Sugestão</button>
-            </div>
+            </form>
         </div>
     </div>
     <footer>
