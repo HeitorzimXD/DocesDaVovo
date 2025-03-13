@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
     const toggleButton = document.getElementById("toggleForm");
-   const sugestaoForm = document.getElementById("sugestaoForm");
+    const sugestaoForm = document.getElementById("sugestaoForm");
     const enviarBotao = document.getElementById("enviarBotao");
+    const mensagemWhatsApp = "Olá, quero fazer um pedido!!"
 
     // Inicializa o botão com o texto "Fazer Sugestão"
     toggleButton.textContent = "Fazer Sugestão";
@@ -18,7 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
             toggleButton.textContent = "Fazer Sugestão";  // Altera o texto para "Fazer Sugestão"
         }
     });
-    
+
+
     enviarBotao.addEventListener("click", function (event) {
         event.preventDefault(); // Previne o comportamento padrão do formulário
 
