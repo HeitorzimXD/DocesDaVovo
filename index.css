@@ -46,7 +46,7 @@ a{
     flex-direction: row;
     align-items: center;
     padding-top: 25px;
-    justify-content: space-around;
+    justify-content: space-evenly;
     border-bottom-left-radius: 1000px 450px;
     border-bottom-right-radius: 1000px 450px;
 }
@@ -58,6 +58,8 @@ a{
 
 .imgSlogan {
     width: 450px;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
 }
 
 .content {

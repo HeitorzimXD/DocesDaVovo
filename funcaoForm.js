@@ -5,9 +5,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.getElementById("msgWhats").addEventListener("click", function() {
         const mensagem = encodeURIComponent("Olá, gostaria de fazer um pedido!");
-        window.open('https://wa.me/5534996698226?text=${mensagem}', "_blank");
+        window.open(`https://wa.me/5534996698226?text=${mensagem}`, "_blank");
     });
     
+    // Lista de imagens que serão exibidas
+    const imagens = ["bolim_capa.png", "bolo_chocolate.png", "brigadeiro.png"];
+    let index = 0;
+    const imgElement = document.getElementById("capa");
+
+    function trocarImagem() {
+        imgElement.style.opacity = 0; // Aplica fade-out antes da troca
+
+        setTimeout(() => {
+            index = (index + 1) % imagens.length;
+            imgElement.src = imagens[index];
+            imgElement.style.opacity = 1; // Aplica fade-in após a troca
+        }, 1000); // Tempo para a imagem desaparecer antes da troca
+    }
+
+    setInterval(trocarImagem, 5000);
+
+
     // Inicializa o botão com o texto "Fazer Sugestão"
     toggleButton.textContent = "Fazer Sugestão";
 
