@@ -13,6 +13,8 @@
         $email = isset($_POST["email"]) ? htmlspecialchars($_POST["email"]) : "Não informado";
         $mensagem = isset($_POST["mensagem"]) ? htmlspecialchars($_POST["mensagem"]) : "Não informado";
 
+        echo "<h3 style='color:black;'>Dados enviados:</h3>";
+
         echo "<p><strong>Nome:</strong> $nome</p>";
         echo "<p><strong>E-mail:</strong> $email</p>";
         echo "<p><strong>Mensagem:</strong> $mensagem</p>";
