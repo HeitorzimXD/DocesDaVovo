@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const toggleButton = document.getElementById("toggleForm");
     const sugestaoForm = document.getElementById("sugestaoForm");
     const enviarBotao = document.getElementById("enviarBotao");
-    const mensagemWhatsApp = "Olá, quero fazer um pedido!!"
 
     // Inicializa o botão com o texto "Fazer Sugestão"
     toggleButton.textContent = "Fazer Sugestão";
