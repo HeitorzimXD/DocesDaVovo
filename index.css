@@ -110,6 +110,7 @@ a{
     height: 50px;
     font-size: 1.1rem;
     border: 0;
+    margin-right: 100px;
 
 }
 
@@ -275,6 +276,7 @@ footer {
 
     .botao {
         width: 12%;
+        margin-right: 10px;
     }
 
     .txtBotao{
@@ -350,6 +352,7 @@ footer {
 
     .botao{
         width: 20%;
+        margin-right: 10px;
     }
 
     .frase {
