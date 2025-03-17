@@ -1,13 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
+    /*
     const toggleButton = document.getElementById("toggleForm");
-    const sugestaoForm = document.getElementById("sugestaoForm");
+    const sugestaoForm = document.getElementById("sugestaoForm"); 
+    */
     const enviarBotao = document.getElementById("enviarBotao");
-
-    document.getElementById("msgWhats").addEventListener("click", function () {
-        const mensagem = encodeURIComponent("Olá, gostaria de fazer um pedido!");
-        window.open(`https://wa.me/5534996698226?text=${mensagem}`, "_blank");
-    });
-
+   
     enviarBotao.addEventListener("click", function (event) {
         event.preventDefault(); // Previne o comportamento padrão do formulário
 
@@ -21,7 +18,11 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("error").innerText =
                 nome === "" || email === "" || mensagem === "" ? "Por favor, preencha todos os campos." : "";
             return; // Impede a execução do código se algum campo estiver vazio
-        } else {
+        } else if (!email.includes("@") || !email.includes(".")) {
+            document.getElementById("error").innerText = "E-mail inválido!";
+            return; // Impede a execução do código se o e-mail for inválido
+        }
+            else {
             document.getElementById("sugestaoForm").submit();
             document.getElementById("error").innerText = "Mensagem enviada com sucesso!"
         }
@@ -31,9 +32,17 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("email").value = "";
         document.getElementById("mensagem").value = "";
     });
-    
+
+});
+
+
+
+
+
+
+    /*
     // Lista de imagens que serão exibidas
-    const imagens = ["bolim_capa.png", "bolo_chocolate.png", "2.png"];
+    const imagens = ["bolim_capa.png", "bolo_chocolate.png", "torta_morango.png"];
     let index = 0;
     const imgElement = document.getElementById("capa");
 
@@ -48,7 +57,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     setInterval(trocarImagem, 5000);
-
+    */
+/*
     // Inicializa o botão com o texto "Fazer Sugestão"
     toggleButton.textContent = "Fazer Sugestão";
 
@@ -64,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
             toggleButton.textContent = "Fazer Sugestão";  // Altera o texto para "Fazer Sugestão"
         }
     });
-});
+    */
 
 
 

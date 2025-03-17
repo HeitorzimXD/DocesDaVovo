@@ -5,7 +5,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #FFFBEA;
+    background-color: #FFDFD1;
     color: #8D5A44;
 }
 
@@ -35,7 +35,7 @@ a{
 .frase {
     justify-content: left;
     font-family: "Sofia", sans-serif;
-    font-size: 2.3rem;
+    font-size: 3.1rem;
 }
 
 .background-section {
@@ -111,7 +111,6 @@ a{
     font-size: 1.1rem;
     border: 0;
     margin-right: 100px;
-
 }
 
 .botao:hover {
@@ -131,7 +130,6 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
 .titulo {
@@ -233,14 +231,29 @@ a{
     background-color: #CC7722;
     transform: scale(1.05);
 }
-/*Configurações do Formulário de Sugestões*/
-/*Para retirada do botão de abertura do formulário, editar o código do form para:
-display: flex;
-flex-direction: column;
-align-items: center;
-*/
+
 form {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ /*Estilização dos Campos do Foromulário*/
+.camposForm {
+    width: 90%;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+/*Estilização do Texto para Mensagens */ 
+.textForm {
+    width: 90%; 
+    padding: 10px; 
+    border-radius: 15px; 
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+    resize: none;
 }
 
 /*Estilização do fomrulário de sugestões*/

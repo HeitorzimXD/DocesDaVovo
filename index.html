@@ -17,7 +17,7 @@
         <!--Logo-->
         <a href="index.html"><img src="2.png" alt="Doces da Vovó" class="logo"></a>
         <p class="frase">Doces da Vovó</p>
-        <button  id="msgWhats" class="botao"> <img class="imgzap" src="zap.png" alt="zapzap"><p class="txtBotao">Fazer Pedido</p></button>
+        <button  id="msgWhats" class="botao" onclick="window.open('https://api.whatsapp.com/send?phone=5534996698226&text=Quero%20fazer%20um%20pedido!')"> <img class="imgzap" src="zap.png" alt="zapzap"><p class="txtBotao">Fazer Pedido</p></button>
     </header>
     <div class="background-section">
         <div class="sloganBotao">
@@ -103,33 +103,23 @@
         <div class="sugestao">
             <h3 class="sTitulo">Possui alguma dúvida ou sugestão?</h3>
             <div class="textoEimagem">
-                <p class="sTxt">Clique no botão abaixo e envie-nos o seu relato ou elogio, sua opinião é muito
+                <p class="sTxt">Preencha os campos abaixo e envie-nos o seu relato ou elogio, sua opinião é muito
                     importante para o crescimento da nossa confeitaria!</p>
                 <img class="imgsug" src="2.png" alt="vovo">
             </div>
             <!--Botão para abrir o Formulário de Sugestões-->
             <!-- Para deixar o formulário visível, comentar o botão abaixo e ir na linha 231 do CSS e editar o form e comentar o código referente no JS-->
-            <button id="toggleForm" class="botaoSug">Fazer Sugestão</button>
-            <form id="sugestaoForm" action="processa.php" method="post" target="_blank">
-                <input type="text" id="nome" name="nome" placeholder="Nome" style="width: 90%;
-                    padding: 10px;
-                    border-radius: 15px;
-                    margin-top: 10px"; />
-                <input type="email" id="email" name="email" placeholder="E-mail" style="width: 90%;
-                    padding: 10px;
-                    border-radius: 15px;
-                    margin-top: 10px"; />
-                <textarea id="mensagem"  name="mensagem" placeholder="Digite sua sugestão aqui..." rows="4" style="width: 90%; 
-                    padding: 10px; 
-                    border-radius: 15px; 
-                    margin-top: 10px;
-                    font-family: Arial, sans-serif;
-                    resize: none"; spellcheck="true"></textarea>
-
+           <!--<button id="toggleForm" class="botaoSug">Fazer Sugestão</button>--> 
+            <form id="sugestaoForm" action="salvar_sugestao.php" method="post" target="_blank">
+                <input type="text" id="nome" name="nome" placeholder="Nome" class="camposForm" required/>
+                <input type="email" id="email" name="email" placeholder="E-mail" class="camposForm" required/>
+                <textarea id="mensagem"  name="mensagem" placeholder="Digite sua sugestão aqui..." rows="4" spellcheck="true" class="textForm" required></textarea>
                 <span class="spanErro" id="error"></span>
                 <!--Botão para Enviar a Sugestão-->
                 <button type="button" id="enviarBotao" class="botaoSug">Enviar Sugestão</button>
             </form>
+            <!--Botão para verificar as sugestões enviadas -->
+            <a href="salvar_sugestao.php">Ver sugestões enviadas</a>
         </div>
     </div>
     <footer>
