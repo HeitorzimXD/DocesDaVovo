@@ -62,6 +62,7 @@ a{
     opacity: 1;
 }
 
+/* Código do Sobre Nós */
 .sobreNos {
     margin-top: 300px;
     padding: 50px;
@@ -91,6 +92,7 @@ a{
     font-size: 1.7rem;
 }
 
+/*Fim do Código do Sobre Nós */
 .content {
     display: flex;
     flex-direction: column;
@@ -325,6 +327,39 @@ footer {
         display: none;
     }
 
+    /* Código do Sobre Nós */
+    .sobreNos {
+        margin-top: 200px;
+    }
+
+    .tituloSN {
+        font-size: 2.7rem;
+        text-align: center;
+    }
+
+    .imgTxtSN {
+        display: block;
+        width: 90%;
+        align-items: center;
+    }
+
+    .imgSN {
+        width: 200px;
+        margin-left: 0;
+        margin-top: 50px;
+    }
+
+    .textoSN {
+        width: 90%;
+        margin-top: 30px;
+        font-size: 1.4rem;
+    }
+    /*Fim do Código do SobreNós*/
+
+    .txtP {
+        margin-top: 200px;
+    }
+
     .background-section {
         flex-direction: column-reverse;
         text-align: center;
@@ -405,6 +440,25 @@ footer {
     .slogan {
        width: 410px;
     }
+
+    .imgSN {
+        width: 300px;
+        margin-left: 0;
+        margin-top: 50px;
+    }
+
+    .imgTxtSN {
+        display: block;
+        width: 90%;
+        align-items: center;
+    }
+
+    .textoSN {
+        width: 90%;
+        margin-top: 30px;
+        font-size: 1.8rem;
+    }
+    /*Fim do Código do Sobre Nós*/
 
     .product-list {
         display: grid;
