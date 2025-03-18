@@ -62,13 +62,42 @@ a{
     opacity: 1;
 }
 
+.sobreNos {
+    margin-top: 300px;
+    padding: 50px;
+    color: #8D5A44;
+}
+
+.tituloSN {
+    font-size: 2.7rem;
+    text-align: center;
+}
+
+.imgTxtSN {
+    display: flex;
+    width: 70%;
+    align-items: center;
+    margin: auto;
+}
+
+.imgSN {
+    width: 300px;
+    margin-left: 100px;
+}
+
+.textoSN {
+    width: 50%;
+    margin: auto;
+    font-size: 1.7rem;
+}
+
 .content {
     display: flex;
     flex-direction: column;
 }
 
 .txtP {
-    margin-top: 170px;
+    margin-top: 300px;
     margin-bottom: 35px;
 }
 

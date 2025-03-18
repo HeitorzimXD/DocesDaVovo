@@ -17,7 +17,7 @@
         <!--Logo-->
         <a href="index.html"><img src="2.png" alt="Doces da Vovó" class="logo"></a>
         <p class="frase">Doces da Vovó</p>
-        <button  id="msgWhats" class="botao" onclick="window.open('https://api.whatsapp.com/send?phone=5534996698226&text=Quero%20fazer%20um%20pedido!')"> <img class="imgzap" src="zap.png" alt="zapzap"><p class="txtBotao">Fazer Pedido</p></button>
+        <button class="botao" onclick="window.open('https://api.whatsapp.com/send?phone=5534996698226&text=Quero%20fazer%20um%20pedido!')"> <img class="imgzap" src="zap.png" alt="zapzap"><p class="txtBotao">Fazer Pedido</p></button>
     </header>
     <div class="background-section">
         <div class="sloganBotao">
@@ -29,6 +29,13 @@
         </div>
     </div>
     <!--Espaço para os Produtos-->
+    <div class="sobreNos">
+        <h3 class="tituloSN">Sobre Nós</h3>
+        <div class="imgTxtSN">
+            <img class="imgSN" src="2.png" alt="">
+            <p class="textoSN">Movidos pela tradição das receitas passadas por gerações da família da Dona Maria, a confeitaria Doces da Vovó leva o sabor caseiro e o afeto da sua família para a mesa de todos preservando a qualidade que torna cada doce especial, como se fossem feitos por mágica!</p>
+        </div>
+    </div>
     <div class="content"  id="produtosNav">
             <h1 class="txtP">Nossos Produtos</h1>
     </div>
@@ -107,10 +114,7 @@
                     importante para o crescimento da nossa confeitaria!</p>
                 <img class="imgsug" src="2.png" alt="vovo">
             </div>
-            <!--Botão para abrir o Formulário de Sugestões-->
-            <!-- Para deixar o formulário visível, comentar o botão abaixo e ir na linha 231 do CSS e editar o form e comentar o código referente no JS-->
-           <!--<button id="toggleForm" class="botaoSug">Fazer Sugestão</button>--> 
-            <form id="sugestaoForm" action="salvar_sugestao.php" method="post" target="_blank">
+            <form action="salvar_sugestao.php" method="post" target="_blank">
                 <input type="text" id="nome" name="nome" placeholder="Nome" class="camposForm" required/>
                 <input type="email" id="email" name="email" placeholder="E-mail" class="camposForm" required/>
                 <textarea id="mensagem"  name="mensagem" placeholder="Digite sua sugestão aqui..." rows="4" spellcheck="true" class="textForm" required></textarea>
