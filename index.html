@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.8">
-    <link rel="shortcut icon" href="2.png" type="image/x-icon">
+    <link rel="shortcut icon" href="vovozinha.png" type="image/x-icon">
     <link rel="stylesheet" href="index.css">
     <script src="funcaoForm.js"></script>
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
@@ -15,30 +15,22 @@
 <body>
     <header>
         <!--Logo-->
-        <a href="index.html"><img src="2.png" alt="Doces da Vovó" class="logo"></a>
+        <a href="index.html"><img src="vovozinha.png" alt="Doces da Vovó" class="logo"></a>
         <p class="frase">Doces da Vovó</p>
-        <button class="botao" onclick="window.open('https://api.whatsapp.com/send?phone=5534996698226&text=Quero%20fazer%20um%20pedido!')"> <img class="imgzap" src="zap.png" alt="zapzap"><p class="txtBotao">Fazer Pedido</p></button>
+        <button class="botaoSug" onclick="window.open('https://api.whatsapp.com/send?phone=5534996698226&text=Quero%20fazer%20um%20pedido!')"><p class="txtBotao">Fazer Pedido</p></button>
     </header>
     <div class="background-section">
         <div class="sloganBotao">
-            <h1 class="slogan">Tradição que aquece o Coração!</h1>
-           <button class="botaoSug" onclick="window.location.href='#produtosNav'">Nossos Produtos</button>
+            <h1 class="slogan">Tradição que aquece o coração!</h1>
+            <button class="botaoSug espacoBProd" onclick="window.location.href='#produtosNav'">Nossos Produtos</button>
         </div>
         <div class="bolinho">
-            <img id="capa" class="imgSlogan" src="bolim_capa.png" alt="">
+            <img id="capa" class="imgSlogan" src="familia.png" alt="">
         </div>
     </div>
     <!--Espaço para os Produtos-->
-    <div class="sobreNos">
-        <h3 class="tituloSN">Sobre Nós</h3>
-        <div class="imgTxtSN">
-            <img class="imgSN" src="2.png" alt="">
-            <p class="textoSN">Movidos pela tradição das receitas passadas por gerações da família da Dona Maria, a confeitaria Doces da Vovó leva o sabor caseiro e o afeto da sua família para a mesa de todos preservando a qualidade que torna cada doce especial, como se fossem feitos por mágica!</p>
-        </div>
-    </div>
     <div class="content"  id="produtosNav">
-            <h1 class="txtP">Nossos Produtos</h1>
-    </div>
+        <h1 class="txtP">Nossos Produtos</h1>
         <div class="product-list">
             <div class="product">
                 <img class="imageProduct" src="bolo_chocolate.png" alt="">
@@ -72,38 +64,6 @@
                 </div>
                 <span class="price">R$35,00</span>
             </div>
-            <div class="product">
-                <img class="imageProduct" src="quindim.png" alt="">
-                <div class="infoProduct">
-                    <h3 class="titulo">Quindim</h3>
-                    <p class="txt">Ingredientes: Gemas, açúcar, coco ralado.</p>
-                </div>
-                <span class="price">R$35,00</span>
-            </div>
-            <div class="product">
-                <img class="imageProduct" src="pudim.png" alt="">
-                <div class="infoProduct">
-                    <h3 class="titulo">Pudim de Leite</h3>
-                    <p class="txt">Ingredientes: Leite condensado, ovos, açúcar, leite.</p>
-                </div>
-                <span class="price">R$35,00</span>
-            </div>
-            <div class="product">
-                <img class="imageProduct" src="rocambole.png" alt="">
-                <div class="infoProduct">
-                    <h3 class="titulo">Rocambole</h3>
-                    <p class="txt">Ingredientes: Farinha, açúcar, ovos, recheio de chocolate ou doce de leite.</p>
-                </div>
-                <span class="price">R$35,00</span>
-            </div>
-            <div class="product">
-                <img class="imageProduct" src="palha_italiana.png" alt="">
-                <div class="infoProduct">
-                    <h3 class="titulo">Palha Italiana</h3>
-                    <p class="txt">Ingredientes: Brigadeiro, biscoito triturado, açúcar de confeiteiro.</p>
-                </div>
-                <span class="price">R$35,00</span>
-            </div>
         </div>
        
         <!--Quadro de Sugestões-->
@@ -112,7 +72,7 @@
             <div class="textoEimagem">
                 <p class="sTxt">Preencha os campos abaixo e envie-nos o seu relato ou elogio, sua opinião é muito
                     importante para o crescimento da nossa confeitaria!</p>
-                <img class="imgsug" src="2.png" alt="vovo">
+                <img class="imgsug" src="vovozinha.png" alt="vovo">
             </div>
             <form action="salvar_sugestao.php" method="post" target="_blank">
                 <input type="text" id="nome" name="nome" placeholder="Nome" class="camposForm" required/>
@@ -120,7 +80,7 @@
                 <textarea id="mensagem"  name="mensagem" placeholder="Digite sua sugestão aqui..." rows="4" spellcheck="true" class="textForm" required></textarea>
                 <span class="spanErro" id="error"></span>
                 <!--Botão para Enviar a Sugestão-->
-                <button type="button" id="enviarBotao" class="botaoSug">Enviar Sugestão</button>
+                <button type="button" id="enviarBotao" class="botaoSug espacoBSug">Enviar Sugestão</button>
             </form>
             <!--Botão para verificar as sugestões enviadas -->
             <a href="salvar_sugestao.php">Ver sugestões enviadas</a>

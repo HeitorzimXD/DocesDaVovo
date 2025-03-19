@@ -1,7 +1,7 @@
 * {
     margin: 0px;
 }
-
+    
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -28,8 +28,9 @@ a{
 
 .logo {
     margin-left: 100px;
-    width: 100px;
-    margin-right: 130px;
+    width: 150px;
+    margin-right: 70px;
+    border-radius: 10px;
 }
 
 .frase {
@@ -51,9 +52,13 @@ a{
     border-bottom-right-radius: 1000px 450px;
 }
 
+.sloganBotao {
+    width: 40%;
+}
+
 .slogan {
     color: white; 
-    font-size: 2.8rem;
+    font-size: 2.5rem;
 }
 
 .imgSlogan {
@@ -62,44 +67,13 @@ a{
     opacity: 1;
 }
 
-/* Código do Sobre Nós */
-.sobreNos {
-    margin-top: 300px;
-    padding: 50px;
-    color: #8D5A44;
-}
-
-.tituloSN {
-    font-size: 2.7rem;
-    text-align: center;
-}
-
-.imgTxtSN {
-    display: flex;
-    width: 70%;
-    align-items: center;
-    margin: auto;
-}
-
-.imgSN {
-    width: 300px;
-    margin-left: 100px;
-}
-
-.textoSN {
-    width: 50%;
-    margin: auto;
-    font-size: 1.7rem;
-}
-
-/*Fim do Código do Sobre Nós */
 .content {
     display: flex;
     flex-direction: column;
 }
 
 .txtP {
-    margin-top: 300px;
+    margin-top: 100px;
     margin-bottom: 35px;
 }
 
@@ -108,7 +82,6 @@ a{
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     justify-content: space-around;
-    flex-wrap: wrap;
     max-width: 1200px;
     margin: auto;
 }
@@ -116,7 +89,6 @@ a{
 .product {
     display: flex;
     flex-direction: row;
-    width: 100%;
     background-color: #fff;
     padding: 15px;
     margin: 10px;
@@ -124,29 +96,6 @@ a{
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     text-align: left;
     box-sizing: border-box;
-}
-
-.botao {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    margin: 30px;
-    padding: 10px 20px;
-    background-color: #E38B40;
-    color: white;
-    text-decoration: none;
-    border-radius: 30px;
-    width: 190px;
-    height: 50px;
-    font-size: 1.1rem;
-    border: 0;
-    margin-right: 100px;
-}
-
-.botao:hover {
-    background-color: #CC7722;
-    transform: scale(1.05);
 }
 
 .imageProduct {
@@ -213,6 +162,7 @@ a{
     display: flex;
     flex-direction: row;
     margin-top: 4%;
+    margin-bottom: 3%;
 }
 
 /*Estilzação do Texto de Sugestões*/
@@ -229,9 +179,10 @@ a{
 
 /*Estilzação da Imagem de Sugestões*/
 .imgsug {
-    width: 230px;
+    width: 260px;
     height: 230px;
     margin-right: 3%;
+    border-radius: 10px;
 }
 
 /*Mensagem de erro caso os campos das sugestões não estejam preenchidos*/
@@ -241,19 +192,19 @@ a{
 
 /*Estilização dos botões de sugestão*/
 .botaoSug {
-    font-size: 1.0rem;
+    font-size: 1.1rem;
     width: 190px;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 20px auto;
+    margin: 30px;
     padding: 10px 20px;
     background-color: #E38B40;
     color: white;
     text-decoration: none;
-    border-radius: 20px;
+    border-radius: 30px;
     border: 0;
     cursor: pointer;
 }
@@ -261,6 +212,10 @@ a{
 .botaoSug:hover {
     background-color: #CC7722;
     transform: scale(1.05);
+}
+
+.espacoBProd {
+    margin-left: 200px
 }
 
 form {
@@ -310,51 +265,29 @@ footer {
     }
 
     .logo {
+        width: 100px;
         margin-left: 0;
         margin-right: 0;
     }
 
     .frase {
-        font-size: 1.4rem;
+        font-size: 1.7rem;
+        margin-left: 20px;
     }
 
-    .botao {
-        width: 12%;
-        margin-right: 10px;
+    .botaoSug {
+        width: 20%;
+        padding: 0;
     }
 
-    .txtBotao{
-        display: none;
+    .espacoBProd {
+        width: 100%;
+        margin-left: 0px;
     }
 
-    /* Código do Sobre Nós */
-    .sobreNos {
-        margin-top: 200px;
+    .espacoBSug {
+        width: 60%;
     }
-
-    .tituloSN {
-        font-size: 2.7rem;
-        text-align: center;
-    }
-
-    .imgTxtSN {
-        display: block;
-        width: 90%;
-        align-items: center;
-    }
-
-    .imgSN {
-        width: 200px;
-        margin-left: 0;
-        margin-top: 50px;
-    }
-
-    .textoSN {
-        width: 90%;
-        margin-top: 30px;
-        font-size: 1.4rem;
-    }
-    /*Fim do Código do SobreNós*/
 
     .txtP {
         margin-top: 200px;
@@ -376,6 +309,7 @@ footer {
     .slogan {
         font-size: 1.2rem;
         width: 180px;
+        margin-left: 10px;
     }
 
     .imgSlogan {
@@ -383,11 +317,8 @@ footer {
     }
 
     .product-list {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        max-width: 1200px;
-        margin: auto;
+        display: table-column;
+        max-width: 450px;
     }
 
     .sugestao {
@@ -396,14 +327,9 @@ footer {
 
     .textoEimagem {
         flex-direction: column;
-        text-align: center;
-        width: 100%;
         margin-bottom: 15px;
     }
 
-    .botaos {
-        width: 80%;
-    }
 
     .sTxt {
         width: 80%;
@@ -427,38 +353,18 @@ footer {
         margin-right: 0;
     }
 
-    .botao{
-        width: 20%;
-        margin-right: 10px;
+    .espacoBProd {
+        margin-left: 110px;
     }
 
     .frase {
-        margin-left: 10%;
-        font-size: 1.8rem;
+        margin-left: 5%;
+        font-size: 2.5rem;
     }
 
     .slogan {
        width: 410px;
     }
-
-    .imgSN {
-        width: 300px;
-        margin-left: 0;
-        margin-top: 50px;
-    }
-
-    .imgTxtSN {
-        display: block;
-        width: 90%;
-        align-items: center;
-    }
-
-    .textoSN {
-        width: 90%;
-        margin-top: 30px;
-        font-size: 1.8rem;
-    }
-    /*Fim do Código do Sobre Nós*/
 
     .product-list {
         display: grid;
