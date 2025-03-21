@@ -49,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {  // Verifica se a requisição veio 
     // **Executa a inserção no banco**
     $stmt->execute();
 }
-
+//A nível de estudo, o código a partir daqui não é necessário para o envio ao BD, apenas para vizualizar os resultados
 // **4. Buscar todas as sugestões armazenadas no banco de dados**
 $query = $pdo->query("SELECT nome, mensagem, data_envio FROM sugestoes ORDER BY data_envio DESC");
 
@@ -72,5 +72,6 @@ $sugestoes = $query->fetchAll(PDO::FETCH_ASSOC);
 <?php else: ?>
     <p>Nenhuma sugestão cadastrada ainda.</p>
 <?php endif; ?>
+
 </body>
 </html>

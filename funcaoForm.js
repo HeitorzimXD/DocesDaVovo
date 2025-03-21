@@ -1,11 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
-    /*
-    const toggleButton = document.getElementById("toggleForm");
-    const sugestaoForm = document.getElementById("sugestaoForm"); 
-    */
     const enviarBotao = document.getElementById("enviarBotao");
    
-    enviarBotao.addEventListener("click", function (event) {
+    enviarBotao.addEventListener("click", function(event) {
         event.preventDefault(); // Previne o comportamento padrão do formulário
 
         // Pegue os dados do formulário
@@ -32,7 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("email").value = "";
         document.getElementById("mensagem").value = "";
     });
-
 });
 
 
